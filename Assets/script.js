@@ -28,10 +28,10 @@ var passwordArray = [];
 var passwordLength;
 var password1 = "";
 
-  alert ("What follows is a series of prompts for password criteria.")
+  alert ("What follows is a series of prompts for password generation criteria.")
 
   function getRightNum () {
-    passwordLength = parseInt(prompt("Please choose a number no less than 8 and no more that 128."));
+    passwordLength = parseInt(prompt("Please choose a character length of no less than 8 and no more that 128."));
     
     if (passwordLength < 8 || passwordLength > 128) {
       alert("Password length must be no less than 8 and no more that 128.")
@@ -39,7 +39,7 @@ var password1 = "";
     }
     
     else if (isNaN(passwordLength)){
-      alert("Password must be a number.")
+      alert("Please enter a number.")
       return getRightNum();
   }
   
